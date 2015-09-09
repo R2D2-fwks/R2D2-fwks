@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/menu.css" />
+<title>CSS Simple Horizontal Menu</title>
+
+</head>
+<body>
+<script type="text/jsx" src="http://localhost:9090/r2d2/components/home.js"></script>
+<script type="text/jsx" src="http://localhost:9090/r2d2/js/fwks.js"></script>
+<script type="text/jsx" src="http://localhost:9090/r2d2/js/R2D2Router.js"></script>
+<script type="text/jsx" src="http://localhost:9090/r2d2/js/jquery.min.js"></script>
+
+
+<script type="text/jsx">
+     React.render(
+            <Container landing="#home">
+                  <Tab path="" handler={ Home } />
+                  <Tab path="#home" handler={ Home } />
+                  <Tab path="#yoda" handler={ Yoda } />
+                  <Tab path="#hansolo" handler={ HanSolo } />
+                  <Tab path="#c-3po" handler={ C3po } />
+                  <Tab path="#chewbacca" handler={ Chewbacca } />
+            </Container>
+            ,document.body);
+</script>  
+
+
+<script src="http://localhost:9090/r2d2/react/JSXTransformer.js"></script>
+<script src="http://localhost:9090/r2d2/react/react-with-addons.js"></script>
+
+</body>
+</html>
